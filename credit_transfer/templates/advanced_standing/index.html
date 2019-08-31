@@ -1,0 +1,41 @@
+{% extends "advanced_standing/base.html" %}
+{% load static %}
+
+{% block title %}Advanced Standing{% endblock %}
+
+{% block content %}
+    <h2 class="page-title">Advanced Standing</h2>
+    <a href="https://www.anu.edu.au/study" target="_blank">
+        <img id="index-page-img" src="{% static "images/index-page-img.png" %}" alt="index-page-img">
+    </a>
+
+    <div class="page-content">
+        <p>The ANU College of Engineering & Computer Science partners with a variety of international institutions to give students the opportunity to study at Australia's top university.</p>
+        <p>The College welcomes students seeking to obtain advanced standing (or 'credit transfer') into the Bachelor of Engineering, Bachelor of Advanced Computing, Bachelor of Software Engineering, or Bachelor of Information Technology.</p>
+        <p>Advanced standing into the Bachelor of Engineering (Research & Development) and Bachelor of Advanced Computing (Research & Development) is not normally permitted and is assessed on a case-by-case basis.</p>
+    </div>
+
+    <h2 class="page-title">How much Advanced Standing can students obtain?</h2>
+
+    <div class="page-content">
+        <p>Generally, students can receive a maximum of two years of advanced standing into the Bachelor of Engineering, Bachelor of Advanced Computing, or Bachelor Software Engineering and a maximum of one and half years of advanced standing into Bachelor of Information Technology.</p>
+        <p>Outside of the College formal advanced standing/credit transfer arrangements (listed below by country/region), the College assesses applications for advanced standing/credit transfer towards its programs based on comparable prior studies at international institutions on a case-by-case basis.</p>
+    </div>
+
+    <div id="countries" class="container">
+        {% for country_row in country_list %}
+            <div class="row">
+            {% for country in country_row %}
+                    <div class="col"><a href="{% url 'advanced_standing:get_partners' country.name %}">{{ country.name }}</a></div>
+            {% endfor %}
+            {% if forloop.last %}
+                {% for _ in table_empty_cells %}
+                    <div class="col"></div>
+                {% endfor %}
+            {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+

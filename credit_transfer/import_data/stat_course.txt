@@ -1,0 +1,92 @@
+STAT1003;Statistical Techniques
+STAT1008;Quantitative Research Methods
+STAT1009;Business Statistics
+STAT1031;Introduction to Actuarial Studies
+STAT2001;Introductory Mathematical Statistics
+STAT2003;Statistical Marketing Research Methods
+STAT2005;Introduction to Stochastic Processes
+STAT2008;Regression Modelling
+STAT2013;Introductory Mathematical Statistics for Actuarial Studies
+STAT2014;Regression Modelling for Actuarial Studies
+STAT2032;Financial Mathematics
+STAT3004;Stochastic Modelling
+STAT3005;Advanced Marketing Research Methods
+STAT3006;Advanced Stochastic Processes
+STAT3008;Applied Statistics
+STAT3011;Graphical Data Analysis
+STAT3012;Design of Experiments and Surveys
+STAT3013;Statistical Inference
+STAT3014;Managerial Decision Analysis
+STAT3015;Generalised Linear Modelling
+STAT3016;Introduction to Bayesian Data Analysis
+STAT3017;Big Data Statistics
+STAT3032;Survival Models
+STAT3035;Risk Theory
+STAT3036;Credibility Theory
+STAT3037;Life Contingencies
+STAT3038;Actuarial Techniques
+STAT3039;Special Topics in Statistics
+STAT3040;Statistical Learning
+STAT3056;Advanced Mathematical Statistics
+STAT3057;Risk Modelling 1
+STAT3058;Risk Modelling 2
+STAT4010;Managing the Research Process
+STAT4018;Stochastic Modelling
+STAT4026;Graphical Data Analysis
+STAT4027;Statistical Inference
+STAT4029;Design of Experiments and Surveys
+STAT4030;Generalised Linear Modelling
+STAT4035;Risk Theory
+STAT4036;Credibility Theory
+STAT4038;Regression Modelling
+STAT4040;Statistical Learning
+STAT4055;Introductory Statistics for Business and Finance
+STAT4072;Survival Models
+STAT4102;Applied Time Series Analysis
+STAT4116;Introduction to Bayesian Data Analysis
+STAT4500;Statistics Honours Thesis
+STAT6006;Marketing Research Methods
+STAT6013;Principles of Mathematical Statistics for Actuarial Studies
+STAT6014;Regression Modelling for Actuarial Studies
+STAT6028;Managerial Decision Analysis
+STAT6038;Regression Modelling
+STAT6039;Principles of Mathematical Statistics
+STAT6043;Life Contingencies
+STAT6045;Actuarial Techniques
+STAT6046;Financial Mathematics
+STAT7001;Applied Statistics
+STAT7004;Introduction to Stochastic Processes
+STAT7006;Advanced Stochastic Processes
+STAT7007;Advanced Marketing Research Methods
+STAT7016;Introduction to Bayesian Data Analysis
+STAT7017;Big Data Statistics
+STAT7018;Stochastic Modelling
+STAT7026;Graphical Data Analysis
+STAT7029;Design of Experiments and Surveys
+STAT7030;Generalised Linear Models
+STAT7040;Statistical Learning
+STAT7042;Survival Models
+STAT7055;Introductory Statistics for Business and Finance
+STAT8002;Applied Time Series Analysis
+STAT8003;Biostatistics
+STAT8004;Introduction to Linear Models
+STAT8005;Operations Research - Linear Programming
+STAT8009;Theory and Methods of Inference
+STAT8010;Managing the Research Process
+STAT8012;Research Techniques (Statistics Graduate Program)
+STAT8014;Probability Theory
+STAT8016;Special Topics in Statistics 1
+STAT8017;Special Topics in Statistics 2
+STAT8020;Multivariate Analysis
+STAT8022;Sample Surveys
+STAT8023;Survey Methods 2
+STAT8024;Special Topics in Applied Statistics 1
+STAT8025;Special Topics in Applied Statistics 2
+STAT8027;Statistical Inference
+STAT8035;Risk Theory
+STAT8036;Credibility Theory
+STAT8053;Research Essay in Statistics
+STAT8056;Advanced Mathematical Statistics
+STAT8057;Risk Modelling 1
+STAT8058;Risk Modelling 2
+STAT8500;RSFAS Masters Thesis

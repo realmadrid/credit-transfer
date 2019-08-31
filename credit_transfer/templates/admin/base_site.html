@@ -1,0 +1,12 @@
+{% extends 'admin/base_site.html' %}
+{% load static %}
+
+{% block title %}{{ title }}Advanced Standing Administration{% endblock %}
+
+{% block extrahead %}
+    <link href="{% static "images/anu.ico" %}" rel="shortcut icon" type="image/x-icon">
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">Advanced Standing Administration</a></h1>
+{% endblock %}

@@ -1,0 +1,407 @@
+body {
+    background-color: whitesmoke;
+}
+
+.banner-wrap {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #333333;
+    border-bottom: #8EBBD0 5px solid;
+    border-bottom-color: #BF2F37;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.banner-left {
+    width: 200px;
+    padding: 20px 0 20px 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.banner-left img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.banner-middle {
+    padding-top: 30px;
+    font-size: 1.4em;
+    color: #ebebeb;
+    text-align: left;
+    letter-spacing: 0.05em;
+    /*line-height: 0.75em;*/
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left {
+    float: left;
+}
+
+.banner-cecs-text {
+    font-size: 0.9em;
+}
+
+footer {
+    background-color: #333333;
+    padding-top: 5px;
+}
+
+.footer-col {
+    color: #CCCCCC;
+}
+
+.footer-col h5 {
+    color: gainsboro;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.footer-col hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-col li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.footer-col a {
+    color: #CCCCCC;
+    margin-left: 5px;
+}
+
+.page-container-wrap {
+    background-color: whitesmoke;
+}
+
+.page-container {
+    width: 60%;
+    /*width: 960px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.page-title {
+    font-family: Arial, sans-serif;
+    color: #55707D;
+    letter-spacing: 0.01em;
+    font-weight: normal;
+    line-height: 1.1em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.page-title a {
+    text-decoration: none;
+    color: #55707D;
+}
+
+.page-title-black {
+    font-family: Arial, sans-serif;
+    color: black;
+    letter-spacing: 0.01em;
+    font-weight: normal;
+    line-height: 1.1em;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.page-title-left {
+    font-family: Arial, sans-serif;
+    color: #55707D;
+    letter-spacing: 0.01em;
+    font-weight: normal;
+    line-height: 1.1em;
+    padding-top: 10px;
+    /*padding-bottom: 5px;*/
+}
+
+.page-subtitle-left {
+    font-family: Arial, sans-serif;
+    color: #55707D;
+    letter-spacing: 0.01em;
+    font-weight: normal;
+    line-height: 1.0em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.page-content {
+    padding: 0 10px;
+}
+
+/*********************** Begin of index.html ***************************/
+
+#index-page-img {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#countries {
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#countries .col {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: #E3EEF3;
+    border: 1px solid rgba(86,61,124,.2)
+}
+
+#countries a {
+    text-decoration: none;
+    color: #00549E;
+}
+/*********************** End of index.html ********************************/
+
+/*********************** Begin of partners.html ***************************/
+#partners {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#partners table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#partners td {
+    border: 1px solid #dee2e6;
+    padding: .6rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.partner-badge {
+    text-align: center;
+}
+
+#partners img {
+    max-width: 125px;
+    max-height: 100px;
+}
+
+#partners a {
+    text-decoration: none;
+    color: #00549E;
+}
+
+/*********************** End of partners.html ********************************/
+
+/*********************** Begin of partner_degrees.html ***********************/
+#programs a {
+    text-decoration: none;
+    color: #00549E;
+}
+
+/*********************** End of partner_degrees.html *************************/
+
+/*********************** Begin of articulations.html *************************/
+.year-selector {
+    float: right;
+    margin-top: 10px;
+}
+
+.articulation-table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.articulation-table table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articulation-table th {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #8EBBD0;
+    border: 1px solid #999999;
+    padding: .25rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.articulation-table td {
+    font-size: 15px;
+    border: 1px solid #999999;
+    padding: .25rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.articulation-table p {
+    margin: 0;
+    padding: 0;
+}
+
+.articulation-table a {
+    text-decoration: none;
+    color: #00549E;
+}
+
+.update-date-left {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    float: left;
+}
+
+.update-date-right {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    float: right;
+}
+
+.studyplan-table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.studyplan-table th {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #8EBBD0;
+    border: 1px solid #999999;
+    padding: .25rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.studyplan-table td {
+    font-size: 15px;
+    border: 1px solid #999999;
+    padding: .25rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.studyplan-table a {
+    text-decoration: none;
+    color: #00549E;
+}
+
+.rationale {
+    padding: 0 10px;
+}
+
+.courses-table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#details table {
+    max-width: 90%;
+}
+
+#required table {
+    max-width: 40%;
+}
+
+.courses-table th {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #8EBBD0;
+    border: 1px solid #999999;
+    padding: .25rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.courses-table td {
+    font-size: 15px;
+    border: 1px solid #999999;
+    padding: .25rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.courses-table a {
+    text-decoration: none;
+    color: #00549E;
+}
+
+.articulation-note {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.note {
+    font-size: 14px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+/*********************** End of articulations.html *************************/
+
+/*********************** Begin of study_plans.html *************************/
+.ms-title a {
+    color: #00549E;
+}
+
+.studyplan-details {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.studyplan-details table {
+    max-width: 80%;
+}
+
+.studyplan-year-col {
+    width: 12%;
+}
+
+.studyplan-semester-col {
+    width: 44%;
+}
+
+.studyplan-details th {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #8EBBD0;
+    border: 1px solid #999999;
+    padding: .25rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.studyplan-details td {
+    font-size: 15px;
+    border: 1px solid #999999;
+    padding: .25rem;
+    vertical-align: middle;
+}
+
+.studyplan-details a {
+    text-decoration: none;
+    color: #00549E;
+}
+
+.summer_holiday {
+    text-align: center;
+}
+
+/*********************** End of study_plans.html *************************/
+

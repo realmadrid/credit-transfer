@@ -1,0 +1,82 @@
+PHYS1001;Foundations of Physics
+PHYS1004;Life Physics
+PHYS1013;Physics of Materials
+PHYS1101;Physics I
+PHYS1201;Physics 2
+PHYS2013;Quantum Mechanics
+PHYS2016;Electromagnetism
+PHYS2017;Waves and Optics
+PHYS2020;Thermal and Statistical Physics
+PHYS2201;Classical Mechanics
+PHYS2204;Soft Condensed Matter: Understanding squishy materials from food to biology
+PHYS2205;Physics for Future Leaders
+PHYS3005;Photonics Laboratory
+PHYS3032;Condensed Matter Physics
+PHYS3035;Fourier Systems and Optics
+PHYS3042;Research Topics Physics
+PHYS3045;Research Topics Physics
+PHYS3051;Photonic Sensing Systems
+PHYS3053;Semiconductors for Optical Systems
+PHYS3055;Electro Optics
+PHYS3057;Optical Physics
+PHYS3058;Work Experience in Photonics
+PHYS3059;Photonics
+PHYS3060;Fibre Optic Communication Systems
+PHYS3070;Physics of the Earth
+PHYS3101;Advanced Quantum Mechanics
+PHYS3102;Advanced Electromagnetism
+PHYS3103;Advanced Statistical Mechanics
+PHYS3104;Physics Advanced Laboratory
+PHYS3105;Physics of Matter
+PHYS3201;Quantum Field Theory
+PHYS3202;Fluids and Plasma
+PHYS3203;General Relativity
+PHYS3301;Wind Energy
+PHYS3701;Rapid Prototyping and Systems Integration
+PHYS3711;Fundamentals of Noise and Measurement
+PHYS4003F;Physics IV Honours (S)
+PHYS4003P;Physics IV Honours (S)
+PHYS4004F;Theoretical Physics IV Honours (S)
+PHYS4004P;Theoretical Physics IV Honours (S)
+PHYS4070;Physics of the Earth
+PHYS4100;Honours Quantum Mechanics
+PHYS4102;Honours Electromagnetism
+PHYS4103;Honours Classical Mechanics
+PHYS4104;Honours Statistical Mechanics
+PHYS4110;Honours Research Project
+PHYS6013;Quantum Mechanics
+PHYS6032;Condensed Matter Physics
+PHYS6070;Physics of the Earth
+PHYS6101;Advanced Quantum Mechanics
+PHYS6205;Physics for Future Leaders
+PHYS6301;Wind Energy
+PHYS6500;Optical Physics
+PHYS6501;Fibre Optic Communication Systems
+PHYS6502;Photonic Sensing Systems
+PHYS6503;Work Experience in Photonics
+PHYS6504;Semiconductors
+PHYS6701;Rapid Prototyping and Systems Integration
+PHYS6711;Fundamentals of Noise and Measurement
+PHYS8000;Masters Research Project
+PHYS8011;ANU/NUS Study Program I
+PHYS8012;ANU/NUS Study Program II
+PHYS8013;Principles of Energy Generation and Transformation
+PHYS8014;Photonics in Biotechnology and Nanotechnology
+PHYS8015;Photonics Laboratory
+PHYS8017;Optoelectronics and Integrated Optics
+PHYS8170;Research Project in Photonics
+PHYS8201;Fundamentals of Nuclear Science
+PHYS8202;Reactor Science
+PHYS8203;Accelerators and their application
+PHYS8204;Fundamentals of Nuclear Radiation
+PHYS8205;Nuclear Fuel Cycle
+PHYS8206;Nuclear Measurement
+PHYS8207;Master of Nuclear Science Research Project
+PHYS8505;Research Topics in Photonics
+PHYS8506;Work experience in Photonics
+PHYS8510;Lasers and Photonics
+PHYS8511;Optical Fibre Communications
+PHYS8721;Advanced Imaging Methods and Systems
+PHYS8750;Special Topics in Quantum Technology
+PHYS8751;Quantum Technology
+PHYS8752;Quantum Industry

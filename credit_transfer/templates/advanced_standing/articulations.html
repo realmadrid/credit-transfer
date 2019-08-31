@@ -1,0 +1,257 @@
+{% extends "advanced_standing/base.html" %}
+{% load static %}
+
+{% block title %}Articulation Details{% endblock %}
+
+{% block content %}
+    <div class="year-selector">
+        <label for="query_year">Academic year:
+            <select id="query_year" name="query_year" onchange="location.href = this.value;">
+                {% for year_option in year_selector %}
+                    {% if year_option == query_year %}
+                        <option selected>{{ year_option }}</option>
+                    {% else %}
+                        <option value="{% url 'advanced_standing:get_articulations' partner_degree_id year_option %}">{{ year_option }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+        </label>
+    </div>
+
+    <div class="clear"></div>
+
+    <h2 class="page-title-black">Credit Arrangement</h2>
+    <h4 class="page-title-left">ANU College of Engineering and Computer Science & {{ artics.first.partner.name }}</h4>
+
+    {% for artic in artics %}
+        <div class="articulation-table">
+            <table>
+                <tr>
+                    <th>
+                        {% if artic.completed_years == 0 %}
+                            Completion of following program
+                        {% else %}
+                            Completion of {{ artic.completed_years|floatformat }}
+                            {% if artic.completed_years > 1 %}
+                                years
+                            {% else %}
+                                year
+                            {% endif %}
+                            of {{ artic.partner.abbr }} {{ artic.partner_degree.degree_type }} in
+                        {% endif %}
+                    </th>
+                    <th>ANU Degree</th>
+                    <th>ANU Normal Duration in years</th>
+                    <th>Advanced Standing in years (Credits)</th>
+                    <th>Time to complete degree at ANU</th>
+                    <th>Academic requirements</th>
+                </tr>
+                <tr>
+                    <td>
+                        {{ artic.partner_degree.partner_program.name }} <br>
+                        {% for m in artic.partner_degree.major %}
+                            &#8226;&nbsp;{{ m }} <br>
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% if artic.anu_program.url %}
+                            <a href="{{ artic.anu_program.url }}" target="_blank">{{ artic.anu_program.name }}</a><br>
+                        {% else %}
+                            {{ artic.anu_program.name }}
+                        {% endif %}
+
+                        {% if artic.ms_list %}
+                        {% for ms in artic.ms_list %}
+                            {% if ms.url %}
+                                &#8226;&nbsp;<a href="{{ ms.url }}" target="_blank">{{ ms.name }}</a><br>
+                            {% else %}
+                                &#8226;&nbsp;{{ ms.name }}<br>
+                            {% endif %}
+                        {% endfor %}
+                        {% endif %}
+                    </td>
+                    <td>
+                        {{ artic.anu_program.duration|floatformat }}
+                        {% if artic.anu_program.duration > 1 %}
+                            years
+                        {% else %}
+                            year
+                        {% endif %}
+                    </td>
+                    <td>{{ artic.advanced_standing }}</td>
+                    <td>
+                        {{ artic.time_to_complete|floatformat }}
+                        {% if artic.time_to_complete > 1 %}
+                            years
+                        {% else %}
+                            year
+                        {% endif %}
+                    </td>
+                    <td>{{ artic.requirements|linebreaks }}</td>
+                </tr>
+            </table>
+
+            <div class="update-date-right">
+                Last update: {{ artic.update_date }}
+            </div>
+            <div class="clear"></div>
+
+            {% if artic.note %}
+                <div class="articulation-note">
+                    Note: {{ artic.note }}
+                </div>
+            {% endif %}
+        </div>
+
+        {% if artic.has_study_plan %}
+            <h4 class="page-title-left">Sample Study Plan</h4>
+            {% if artic.has_odd_and_even %}
+                <div class="studyplan-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Commencement Year</th>
+                                <th colspan="2">Semester Intake</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Odd Year</td>
+                                <td><a href="{% url 'advanced_standing:get_study_plans' artic.id 1 1 %}">Semester 1 (February)</a></td>
+                                <td><a href="{% url 'advanced_standing:get_study_plans' artic.id 1 2 %}">Semester 2 (July)</a></td>
+                            </tr>
+                            <tr>
+                                <td>Even Year</td>
+                                <td><a href="{% url 'advanced_standing:get_study_plans' artic.id 2 1 %}">Semester 1 (February)</a></td>
+                                <td><a href="{% url 'advanced_standing:get_study_plans' artic.id 2 2 %}">Semester 2 (July)</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="studyplan-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Semester Intake</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="{% url 'advanced_standing:get_study_plans' artic.id 0 1 %}">Semester 1 (February)</a></td>
+                                <td><a href="{% url 'advanced_standing:get_study_plans' artic.id 0 2 %}">Semester 2 (July)</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+        {% endif %}
+
+        {% if artic.rationale %}
+            <h4 class="page-title-left">Rationale</h4>
+            <div class="rationale">
+                <p>{{ artic.rationale|linebreaks }}</p>
+            </div>
+        {% endif %}
+
+        {% if artic.advanced_standing_details_list %}
+            <h4 class="page-title-left">Advanced Standing Details (credits students will receive)</h4>
+            <div id="details" class="courses-table">
+                <table>
+                {% if artic.has_mappings %}
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>
+                                Equivalent Courses
+                                {% if artic.partner.abbr %}
+                                    in {{ artic.partner.abbr }}
+                                {% endif %}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for c in artic.advanced_standing_details_list %}
+                        <tr>
+                            {% if c.url %}
+                                <td><a href="{{ c.url }}" target="_blank">{{ c.code }}</a></td>
+                                <td><a href="{{ c.url }}" target="_blank">{{ c.name }}</a></td>
+                            {% else %}
+                                <td>{{ c.code }}</td>
+                                <td>{{ c.name }}</td>
+                            {% endif %}
+                            {% if c.mappings %}
+                                <td>{{ c.mappings|linebreaksbr }}</td>
+                            {% else %}
+                                <td></td>
+                            {% endif %}
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                    {% else %}
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Course Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for c in artic.advanced_standing_details_list %}
+                            <tr>
+                                {% if c.url %}
+                                    <td><a href="{{ c.url }}" target="_blank">{{ c.code }}</a></td>
+                                    <td><a href="{{ c.url }}" target="_blank">{{ c.name }}</a></td>
+                                {% else %}
+                                    <td>{{ c.code }}</td>
+                                    <td>{{ c.name }}</td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                {% endif %}
+                </table>
+            </div>
+            {% if artic.note %}
+                <div class="note">
+                    {{ artic.details_note|linebreaks }}
+                </div>
+            {% endif %}
+        {% endif %}
+
+        {% if artic.required_courses_list %}
+            <h4 class="page-title-left">In order to comply with the requirements of the articulation program, <br>students will need to do the following courses at ANU</h4>
+            <div id="required" class="courses-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for c in artic.required_courses_list %}
+                        <tr>
+                        {% if c.url %}
+                            <td><a href="{{ c.url }}" target="_blank">{{ c.code }}</a></td>
+                            <td><a href="{{ c.url }}" target="_blank">{{ c.name }}</a></td>
+                        {% else %}
+                            <td>{{ c.code }}</td>
+                            <td>{{ c.name }}</td>
+                        {% endif %}
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            {% if artic.partner_degree.note %}
+                <div class="note">
+                    {{ artic.partner_degree.note|linebreaks }}
+                </div>
+            {% endif %}
+        {% endif %}
+        <br>
+
+    {% endfor %}
+{% endblock %}

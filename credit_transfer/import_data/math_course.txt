@@ -1,0 +1,83 @@
+MATH1003;Algebra and Calculus Methods
+MATH1005;Discrete Mathematical Models
+MATH1013;Mathematics and Applications 1
+MATH1014;Mathematics and Applications 2
+MATH1042;Philosophy of the Cosmos
+MATH1113;Mathematical Foundations for Actuarial Studies
+MATH1115;Advanced Mathematics and Applications 1
+MATH1116;Advanced Mathematics and Applications  2
+MATH2222;Introduction to Mathematical Thinking: Problem-Solving and Proofs
+MATH2242;Introduction to Geometry: Curves and Surfaces
+MATH2301;Games, Graphs and Machines
+MATH2305;Applied Mathematics I
+MATH2306;Applied Mathematics II
+MATH2307;Bioinformatics and Biological Modelling
+MATH2320;Advanced Analysis 1: Metric Spaces and Applications
+MATH2322;Advanced Algebra 1: Groups, Rings and Linear Algebra
+MATH3015;Mathematics of Finance
+MATH3029;Probability Modelling with Applications
+MATH3062;Fractal Geometry and Chaotic Dynamics
+MATH3104;Advanced Algebra 1: Groups, Rings and Linear Algebra
+MATH3116;Advanced Analysis 1: Metric Spaces and Applications
+MATH3133;Environmental Mathematics
+MATH3228;Advanced Complex Analysis
+MATH3301;Number Theory and Cryptography
+MATH3320;Advanced Analysis 2: Topology, Lebesgue Integration and Hilbert Spaces
+MATH3325;Advanced Functional Analysis, Spectral theory and Applications
+MATH3329;Relativity, Black Holes and Cosmology
+MATH3342;Advanced Differential Geometry
+MATH3343;Advanced Foundations of Mathematics
+MATH3345;Advanced Algebra 2: Field extensions and Galois Theory
+MATH3346;Advanced Data Mining
+MATH3349;Special Topics in Mathematics
+MATH3351;Advanced Topics in Mathematical Physics
+MATH3353;Advanced Mathematical Bioinformatics
+MATH3354;Advanced Topics in Algebra
+MATH3501;Scientific and Industrial Modelling
+MATH3511;Scientific Computing
+MATH3512;Matrix Computations
+MATH3514;Numerical Optimisation
+MATH4005;Thesis and Presentations in Mathematics
+MATH4201;Topics in Computational Maths Honours
+MATH4202;Theory of Partial Differential Equations Honours
+MATH4204;Algebraic Topology Honours
+MATH4349;Special Topics in Mathematics
+MATH6005;Discrete Mathematical Models
+MATH6100;Bioinformatics and Biological Modelling
+MATH6102;Environmental Modelling and Integrated Assessment
+MATH6103;Scientific and Industrial Modelling
+MATH6109;Probability Modelling with Applications
+MATH6110;Analysis 1: Metric spaces and Applications
+MATH6111;Scientific Computing
+MATH6112;Matrix Computations
+MATH6114;Number Theory and Cryptography
+MATH6115;Mathematical Finance
+MATH6116;Fractal Geometry and Chaotic Dynamics
+MATH6118;Algebra 1:  Groups, Rings and Advanced Linear Algebra
+MATH6119;Numerical Optimisation
+MATH6200;Topics in Algebra and Topology
+MATH6201;Topics in Computational Mathematics
+MATH6202;Theory of Partial Differential Equations
+MATH6203;Foundations of Mathematics
+MATH6204;Algebraic Topology
+MATH6205;Differential Geometry
+MATH6206;Topics in Stochastic Analysis
+MATH6207;Topics in Statistical Science
+MATH6208;Advanced Mathematical Bioinformatics
+MATH6209;Special Topic in Mathematical Sciences
+MATH6210;Data Mining
+MATH6211;Topics in Mathematical Physics
+MATH6212;Analysis 2: Topology, Lebesgue Integration and Hilbert Spaces
+MATH6213;Complex Analysis
+MATH6214;Advanced Functional Analysis, Spectral theory and Applications
+MATH6215;Algebra 2: Field extensions and Galois Theory
+MATH6216;Advanced Topics in Algebra
+MATH6222;Introduction to Mathematical Thinking: Problem-Solving and Proofs
+MATH6242;Introduction to Geometry: Curves and Surfaces
+MATH6405;Ordinary Differential Equations and Advanced Vector Calculus
+MATH6406;Partial Differential Equations,  Fourier Analysis and Complex Analysis
+MATH8001;Poetry of the Cosmos
+MATH8020;Computational Science
+MATH8701;Mathematics Research Project
+MATH8702;Mathematics Reading Course
+MATH8705;Mathematics Special Topic

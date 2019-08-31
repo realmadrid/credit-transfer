@@ -1,0 +1,33 @@
+# Special courses
+UNSP-IT-0206;6 units of unspecified 2000-level IT electives
+UNSP-IT-0306;6 units of unspecified 3000-level IT electives
+UNSP-NONIT-0106;6 units of unspecified 1000-level non-IT electives
+UNSP-NONIT-0112;12 units of unspecified 1000-level non-IT electives
+UNSP-NONIT-0118;18 units of unspecified 1000-level non-IT electives
+UNSP-NONIT-0212;12 units of unspecified 2000-level non-IT electives
+UNSP-NONIT-0218;18 units of unspecified 2000-level non-IT electives
+UNSP-NONIT-0224;24 units of unspecified 2000-level non-IT electives
+UNSP-COMP-0306;6 units of unspecified 3000-level COMP electives
+UNSP-SCIENCE-0106;6 units of unspecified 1000-level science electives
+
+# Exemption courses
+EXEMPT-MATH1005;Exemption from MATH1005 Discrete Mathematical Models
+
+# MATH courses
+MATH1005;Discrete Mathematical Models
+MATH1013;Mathematics and Applications 1
+MATH1014;Mathematics and Applications 2
+MATH3511;Scientific Computing
+
+# PHYS courses
+PHYS1101;Physics I
+
+# STAT courses
+STAT1003;Statistical Techniques
+STAT1008;Quantitative Research Methods
+
+# INFS courses
+INFS1001;Business Information Systems
+INFS2024;Information Systems Analysis
+INFS3024;Information Systems Management
+INFS3059;Project Management and Information Systems

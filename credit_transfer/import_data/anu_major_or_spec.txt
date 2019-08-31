@@ -1,0 +1,40 @@
+# ANU Majors
+ADIS-MAJ;Advanced Intelligent Systems;Undergraduate
+BMSY-MAJ;Biomedical Systems;Undergraduate
+COMS-MAJ;Computer Systems(MAJ);Undergraduate
+CSEC-MAJ;Cyber Security;Undergraduate
+DTSC-MAJ;Data Science;Undergraduate
+ELCO-MAJ;Electronic and Communication Systems;Undergraduate
+ENGS-MAJ;Engineering Science;Undergraduate
+INFS-MAJ;Information Systems;Undergraduate
+INPP-MAJ;Innovation and Professional Practice;Undergraduate
+INSY-MAJ;Intelligent Systems(MAJ);Undergraduate
+MMSY-MAJ;Mechanical and Material Systems;Undergraduate
+MTSY-MAJ;Mechatronic Systems;Undergraduate
+PHOT-MAJ;Photonic Systems;Undergraduate
+RENE-MAJ;Renewable Energy Systems;Undergraduate
+RSCC-MAJ;Research and Development;Undergraduate
+SOFT-MAJ;Software Development;Undergraduate
+# SESY-MAJ;Sustainable Energy Systems;Undergraduate
+
+# ANU Specialisations
+ARIN-SPEC;Artificial Intelligence;Undergraduate
+AINT-SPEC;Artificial Intelligence;Postgraduate
+COMP-SPEC;Computational Foundations;Postgraduate
+# COMP-HSPC;Computer Science Honours;Undergraduate
+CMSY-SPEC;Computer Systems;Postgraduate
+COMS-SPEC;Computer Systems(SPEC);Undergraduate
+DTSC-SPEC;Data Science;Postgraduate
+HCSD-SPEC;Human Centred Design and Software Development;Postgraduate
+IHCC-SPEC;Information and Human Centred Computing;Postgraduate
+INSY-SPEC;Intelligent Systems(SPEC);Undergraduate
+MACL-SPEC;Machine Learning;Undergraduate
+MCHL-SPEC;Machine Learning;Postgraduate
+PCOM-SPEC;Professional Computing;Postgraduate
+SENG-SPEC;Software Engineering;Postgraduate
+SYAR-SPEC;Systems and Architecture;Undergraduate
+THCS-SPEC;Theoretical Computer Science;Undergraduate
+
+# Special instances: No major or specialisation
+NOMS-UG;No Major or Specialisation;Undergraduate
+NOMS-PG;No Major or Specialisation;Postgraduate

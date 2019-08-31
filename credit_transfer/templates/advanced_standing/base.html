@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Advanced Standing {% endblock title %}</title>
+    <link href="{% static "images/anu.ico" %}" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+<div class="banner-wrap">
+    <div class="banner-left">
+        <a href="https://www.anu.edu.au/"><img src="{% static "images/2x_anu_logo_small_over.png" %}" alt="ANU Logo"></a>
+    </div>
+
+    <div class="banner-middle">
+        <div class="left">
+            <img src="{% static "images/pipe_logo_small.png" %}" alt="pipe">
+        </div>
+        <div class="banner-cecs-text">
+            ANU College of<br>ENGINEERING & COMPUTER SCIENCE
+        </div>
+
+    </div>
+</div>
+<div class="clear"></div>
+
+<div class="page-container-wrap">
+    <div class="page-container">
+        {% block content %}{% endblock content %}
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 footer-col">
+                <h5>Related Sites</h5>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://cecs.anu.edu.au/" target="_blank">CECS</a>
+                    </li>
+                    <li>
+                        <a href="https://cs.anu.edu.au/" target="_blank">Research School of Computer Science</a>
+                    </li>
+                    <li>
+                        <a href="https://eeme.anu.edu.au/" target="_blank">Research School of Engineering</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 footer-col">
+                <h5>Social Media</h5>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/anucecs" target="_blank"><i class="fab fa-twitter-square fa-lg"></i></a>
+                        <a href="https://twitter.com/anucecs" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/anu.cecs/" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
+                        <a href="https://www.facebook.com/anu.cecs/" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/anu.cecs/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.instagram.com/anu.cecs/" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/ANUexperience" target="_blank"><i class="fab fa-youtube-square fa-lg"></i></a>
+                        <a href="https://www.youtube.com/user/ANUexperience" target="_blank">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/anu-college-of-engineering-&-computer-science" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/company/anu-college-of-engineering-&-computer-science" target="_blank">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 footer-col">
+                <h5>Page Contact</h5>
+                <hr>
+                <ul>
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <span>Haotian Shi</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>haotian.shi@anu.edu.au</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-university"></i>
+                        <span>Research School of Computer Science, Australian National University</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+{% extends "advanced_standing/base.html" %}
+{% load static %}
+
+{% block title %}Sample Study Plans{% endblock %}
+
+{% block content %}
+    {% if studyplans.semester == 1 %}
+        {% if studyplans.year_type == 1 %}
+            <h2 class="page-title-black">Odd Year Semester 1 Commencement (February)</h2>
+        {% elif studyplans.year_type == 2 %}
+            <h2 class="page-title-black">Even Year Semester 1 Commencement (February)</h2>
+        {% else %}
+            <h2 class="page-title-black">Semester 1 Commencement (February)</h2>
+        {% endif %}
+    {% else %}
+        {% if studyplans.year_type == 1 %}
+            <h2 class="page-title-black">Odd Year Semester 2 Commencement (July)</h2>
+        {% elif studyplans.year_type == 2 %}
+            <h2 class="page-title-black">Even Year Semester 2 Commencement (July)</h2>
+        {% else %}
+            <h2 class="page-title-black">Semester 2 Commencement (July)</h2>
+        {% endif %}
+    {% endif %}
+
+    {% for plan in studyplans %}
+        {% if plan.major_or_spec %}
+            {% if plan.major_or_spec.url %}
+                <h4 class="page-title-left ms-title"><a href="{{ plan.major_or_spec.url }}" target="_blank">{{ plan.major_or_spec.name }}</a></h4>
+            {% else %}
+                <h4 class="page-title-left">{{ plan.major_or_spec.name }}</h4>
+            {% endif %}
+        {% endif %}
+
+        <div class="studyplan-details">
+        {% if not plan.year3_sem1 %}
+            <table>
+                <thead>
+                    <tr>
+                        <th class="studyplan-year-col"></th>
+                        <th class="studyplan-semester-col">ANU Semester 1 (February)</th>
+                        <th class="studyplan-semester-col">ANU Semester 2 (July)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Year 1 at ANU</td>
+                        <td>
+                            {% for c in plan.year1_sem1 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                        <td>
+                            {% for c in plan.year1_sem2 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                    </tr>
+
+                    {% if plan.summer_holiday %}
+                        <tr>
+                            <td colspan="3" class="summer_holiday">
+                                {% if plan.summer_holiday.url %}
+                                    <a href="{{ plan.summer_holiday.url }}" target="_blank">{{ plan.summer_holiday.text }}</a>
+                                {% else %}
+                                    {{ plan.summer_holiday.text }}
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endif %}
+
+                    <tr>
+                        <td>Year 2 at ANU</td>
+                        <td>
+                            {% for c in plan.year2_sem1 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                        <td>
+                            {% for c in plan.year2_sem2 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        {% else %}
+            <table>
+                <thead>
+                    <tr>
+                        <th class="studyplan-year-col"></th>
+                        <th class="studyplan-semester-col">ANU Semester 1 (February)</th>
+                        <th class="studyplan-semester-col">ANU Semester 2 (July)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Year 1 at ANU</td>
+                        <td></td>
+                        <td>
+                            {% for c in plan.year1_sem2 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                    </tr>
+
+                    {% if plan.summer_holiday %}
+                        <tr>
+                            <td colspan="3" class="summer_holiday">
+                                {% if plan.summer_holiday.url %}
+                                    <a href="{{ plan.summer_holiday.url }}" target="_blank">{{ plan.summer_holiday.text }}</a>
+                                {% else %}
+                                    {{ plan.summer_holiday.text }}
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endif %}
+
+                    <tr>
+                        <td>Year 2 at ANU</td>
+                        <td>
+                            {% for c in plan.year2_sem1 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                        <td>
+                            {% for c in plan.year2_sem2 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Year 3 at ANU</td>
+                        <td>
+                            {% for c in plan.year3_sem1 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                        <td>
+                            {% for c in plan.year3_sem2 %}
+                                {% if c.url %}
+                                    &#8226;&nbsp;<a href="{{ c.url }}" target="_blank">{{ c.code_and_name }}</a><br>
+                                {% else %}
+                                    &#8226;&nbsp;{{ c.code_and_name }}<br>
+                                {% endif %}
+                            {% endfor%}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        {% endif %}
+            <div class="update-date-left">
+                Last update: {{ plan.update_date }}
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+        <div class="note">
+            {{ plan.note|linebreaks }}
+        </div>
+    {% endfor %}
+
+    <p><b>NOTE</b>: It is a student’s responsibility to ensure the above is correct and satisfies the degree requirements of the program. This is a guide only and is provided to assist students with their enrolment planning.</p>
+{% endblock %}
+

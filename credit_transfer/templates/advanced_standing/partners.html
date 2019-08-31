@@ -1,0 +1,31 @@
+{% extends "advanced_standing/base.html" %}
+{% load static %}
+
+{% block title %}ANU Partner Institution{% endblock %}
+
+{% block content %}
+    <h2 class="page-title">Partner Institutions in {{ country }}</h2>
+
+    <div id="partners">
+        <table>
+            {% for partner in partners %}
+                <tr>
+                    <td>
+                        <div class="partner-badge">
+                        {% if partner.badge %}
+                            <img src="{{ partner.badge.url }}" alt="Badge">
+                        {% else %}
+                            University badge not available now
+                        {% endif %}
+                        </div>
+                    </td>
+
+                    <td>
+                        <a href="{% url 'advanced_standing:get_partner_degrees' partner.id %}">{{ partner.name }}</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+{% endblock %}

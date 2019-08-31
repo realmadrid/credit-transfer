@@ -1,0 +1,124 @@
+ENGN1211;Discovering Engineering
+ENGN1215;Engineering Sciences
+ENGN1217;Introduction to Mechanics
+ENGN1218;Introduction to Electronics
+ENGN2217;Mechanical Systems and Design
+ENGN2218;Electronic Systems and Design
+ENGN2219;Computer Architecture and Simulation
+ENGN2222;Engineering Thermodynamics
+ENGN2225;Systems Engineering Design
+ENGN2226;Systems Engineering Analysis
+ENGN2228;Signal Processing
+ENGN2229;Dynamics and Simulation
+ENGN2300;Engineering Design 2: Systems Approaches for Design
+ENGN2301;Engineering Design 3: Systems Approaches for Analysis
+ENGN2706;Engineering Research and Development Project (Methods)
+ENGN2707;Engineering Research and Development Project
+ENGN3013;Engineering for a Humanitarian Context
+ENGN3100;Practical Experience
+ENGN3200;Engineering Internship
+ENGN3211;Investment Decisions and Financial Systems
+ENGN3213;Digital Systems and Microprocessors
+ENGN3221;Engineering Management
+ENGN3223;Control Systems
+ENGN3224;Fluid Mechanics and Heat Transfer
+ENGN3226;Digital Communications
+ENGN3230;Engineering Innovation
+ENGN3300;Engineering Design 4A: Systems Approaches for Management
+ENGN3301;Engineering Design 4B: Systems Approaches for Operations
+ENGN3331;System Dynamics
+ENGN3334;Semiconductors
+ENGN3410;Engineering Sustainable Systems
+ENGN3512;Optical Physics
+ENGN3539;Data Communication Networks
+ENGN3601;Engineering Materials
+ENGN3706;Engineering Research & Development Project
+ENGN3712;Engineering Research and Development Project
+ENGN3810;Biomechanics and Biomaterials
+ENGN3820;Biomedical Imaging
+ENGN4027;Sustainable Nanomaterials
+ENGN4200;Individual Project
+ENGN4212;Manufacturing Technologies
+ENGN4221;Systems Engineering Project
+ENGN4300;Capstone Design Project
+ENGN4350;Individual Project
+ENGN4420;Sustainable Product Development
+ENGN4511;Composite Materials
+ENGN4513;Fibre Optics Communications Systems
+ENGN4516;Energy Resources and Renewable Technologies
+ENGN4520;Special Topics in Engineering I
+ENGN4521;Special Topics in Engineering 2
+ENGN4522;Special Topics in Engineering 3
+ENGN4523;Special Topics in Engineering 4
+ENGN4524;Photovoltaic Technologies
+ENGN4525;Solar Thermal Technologies
+ENGN4528;Computer Vision
+ENGN4536;Wireless Communications
+ENGN4537;Digital Signal Processing
+ENGN4547;Grid Integration of Renewable and Storage Technologies
+ENGN4548;Wind Energy
+ENGN4613;Photonic Sensing Systems
+ENGN4615;Finite Element Analysis
+ENGN4625;Power Systems and Power Electronics
+ENGN4627;Robotics
+ENGN4628;Network Optimisation and Control
+ENGN4706;Engineering Research and Development Project
+ENGN4712;Engineering Research and Development Project
+ENGN4718;Engineering Research and Development Project
+ENGN4810;Nanotechnology and Applications
+ENGN4820;Bio Micro and Nano Electro-Mechanical Systems (BioMEMS and BioNEMS)
+ENGN4821;Biomedical Signal Processing
+ENGN5920;Exchange Program in Engineering
+ENGN6200;Engineering Internship
+ENGN6212;Manufacturing Technologies
+ENGN6213;Digital Systems and Microprocessors
+ENGN6223;Control Systems
+ENGN6224;Fluid Mechanics and Heat Transfer
+ENGN6250;Professional Practice 1
+ENGN6331;Systems Dynamics
+ENGN6334;Semiconductors
+ENGN6410;Engineering Sustainable Systems
+ENGN6420;Sustainable Product Development
+ENGN6511;Composite Materials
+ENGN6512;Optical Physics
+ENGN6513;Fibre Optics Communication Systems
+ENGN6516;Energy Resources and Renewable Technologies
+ENGN6520;Special Topics in Engineering I
+ENGN6521;Special Topics In  Engineering II
+ENGN6524;Photovoltaic Technologies
+ENGN6525;Solar Thermal Technologies
+ENGN6528;Computer Vision
+ENGN6536;Wireless Communications
+ENGN6537;Digital Signal Processing
+ENGN6539;Data Communication Networks
+ENGN6601;Engineering Materials
+ENGN6613;Photonic Sensing Systems
+ENGN6615;Finite Element Analysis
+ENGN6625;Power Systems and Power Electronics
+ENGN6626;Digital Communications
+ENGN6627;Robotics
+ENGN6628;Network Optimisation and Control
+ENGN8100;Introduction to Systems Engineering
+ENGN8104;Engineering Research Project
+ENGN8120;Systems Modelling
+ENGN8170;Group Project
+ENGN8180;Master Thesis Project
+ENGN8224;Advanced Control Systems
+ENGN8260;Professional Practice 2
+ENGN8501;Advanced Topics in Computer Vision
+ENGN8527;Advanced Topics in Solar Energy Technologies
+ENGN8534;Information Theory
+ENGN8535;Engineering Data Analytics
+ENGN8536;Advanced Topics in Mechatronics Systems
+ENGN8537;Embedded Systems and Real Time Digital Signal Processing
+ENGN8538;Probability and Stochastic Processes in Engineering
+ENGN8539;Advanced Topics in Computer Vision
+ENGN8601;Research Project
+ENGN8602;Research Project
+ENGN8625;Advanced Power Systems
+ENGN8637;Advanced Topics in Communications and Signal Processing
+ENGN8820;Exchange Program for Graduate Students in Engineering
+ENGN8830;Photovoltaic Power Plants
+ENGN8831;Integration of Renewable Energy into Power Systems and Microgrids
+ENGN8832;Urban Energy and Energy Efficiency
+ENGN8833;Industrial Energy Efficiency and Decarbonisation

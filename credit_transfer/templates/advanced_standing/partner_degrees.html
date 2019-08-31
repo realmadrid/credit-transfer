@@ -1,0 +1,56 @@
+{% extends "advanced_standing/base.html" %}
+{% load static %}
+
+{% block title %}Articulation Programs{% endblock %}
+
+{% block content %}
+    <h1 class="page-title">
+        {% if partner.url %}
+            <a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a>
+        {% else %}
+            {{ partner.name }}
+        {% endif %}
+    </h1>
+
+    {% if partner.description %}
+        <h3 class="page-title-left">General Information</h3>
+        <div class="page-content">
+            <p>{{ partner.description|linebreaks }}</p>
+        </div>
+    {% endif %}
+
+    {% if comp or engi %}
+        <div id="programs">
+            <h3 class="page-title-left">Articulation Programs</h3>
+            {% if comp %}
+                <h4 class="page-subtitle-left">Computer Science</h4>
+                <ul>
+                    {% for degree in comp %}
+                        <li><a href="{% url 'advanced_standing:get_articulations' degree.id year %}">{{ degree.partner_program.name }}</a> in major:
+                            <ul>
+                                {% for major in degree.major %}
+                                    <li>{{ major }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if engi %}
+                <h4 class="page-subtitle-left">Engineering</h4>
+                <ul>
+                    {% for degree in engi %}
+                        <li><a href="{% url 'advanced_standing:get_articulations' degree.id year %}">{{ degree.partner_program.name }}</a> in major:
+                            <ul>
+                                {% for major in degree.major %}
+                                    <li>{{ major }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endblock %}

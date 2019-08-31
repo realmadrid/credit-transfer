@@ -1,0 +1,29 @@
+# ANU Bachelor Programs
+AACOM;Bachelor of Advanced Computing (Honours);4
+AACRD;Bachelor of Advanced Computing (Research and Development) (Honours);4
+BADAN;Bachelor of Applied Data Analytics;3
+# HADAN;Bachelor of Applied Data Analytics (Honours);1
+AENGI;Bachelor of Engineering (Honours);4
+AENRD;Bachelor of Engineering (Research and Development) (Honours);4
+BIT;Bachelor of Information Technology;3
+# HIT;Bachelor of Information Technology (Honours);1
+ASENG;Bachelor of Software Engineering (Honours);4
+# ECOMP;Diploma of Computing;1
+
+# ANU Master Programs
+# CADAN;Graduate Certificate of Applied Data Analytics;0.5
+# CCSRM;Graduate Certificate of Cyber Security, Strategy and Risk Management;0.5
+# DADAN;Graduate Diploma of Applied Data Analytics;1
+# 6706XGDCP;Graduate Diploma of Computing;1
+# DCSRM;Graduate Diploma of Cyber Security, Strategy and Risk Management;1
+MADAN;Master of Applied Data Analytics;1.5
+7706XMCOMP;Master of Computing;2
+VCOMP;Master of Computing (Advanced);2
+MCSRM;Master of Cyber Security, Strategy and Risk Management;1.5
+NDSTE;Master of Engineering in Digital Systems and Telecommunications;2
+NELENG;Master of Engineering in Electrical Engineering;2
+NMECH;Master of Engineering in Mechatronics;2
+NENPH;Master of Engineering in Photonics;2
+NENRE;Master of Engineering in Renewable Energy;2
+# MINPP;Master of Innovation and Professional Practice;2
+MMLCV;Master of Machine Learning and Computer Vision;2
