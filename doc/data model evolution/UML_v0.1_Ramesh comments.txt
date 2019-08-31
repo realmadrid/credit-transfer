@@ -1,0 +1,9 @@
+Articulations are related to ANU and one other institution. You need to represent that in the model.
+
+The access/security I would think doesn't not need to be included here. Perhaps a different model.
+
+In the CECS page, each articulation may not correspond to a single row. Some rows have multiple degrees from the other institution listed. Each one of these could be a separate articulation, in terms of the credit details and corresponding study plans.
+
+Each articulation has an associated rationale and a mapping of ANU's courses to the institution's courses. It also involves two programs -  an ANU one and one from the other institution.
+
+The other institution may have certain requirements on its students, such as having to do certain courses at ANU as part of their study. This only happens in cases where the student ends up getting a degree from both ANU and the other institution.
