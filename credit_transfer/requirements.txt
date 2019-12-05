@@ -1,6 +1,6 @@
 beautifulsoup4==4.7.1
 certifi==2018.4.16
-Django==2.2
+Django==2.2.8
 django-smart-selects==1.5.4
 gunicorn==19.9.0
 Jinja2==2.10
