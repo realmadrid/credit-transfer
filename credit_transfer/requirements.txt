@@ -1,5 +1,5 @@
 beautifulsoup4==4.7.1
-certifi==2018.4.16
+certifi==2022.12.7
 Django==2.2
 django-smart-selects==1.5.4
 gunicorn==19.9.0
